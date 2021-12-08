@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap4',
+    'register_data',
+    'mvx_revision_control_log_data'
 ]
 
 MIDDLEWARE = [
