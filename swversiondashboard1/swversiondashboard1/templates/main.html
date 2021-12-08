@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}MAIN{% endblock %}</title>    
+
+    
+    
+    {# Load the tag library #}
+    {% load bootstrap4 %}
+
+    {# Load CSS and JavaScript #}
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+
+    {# Display django.contrib.messages as Bootstrap alerts #}
+    {# {% bootstrap_messages %} #}
+
+    <style>        
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+    </style>
+    <link href="{% static 'css\dashboard_format2.css' %}" rel="stylesheet">    
+    {% block style %} {% endblock %}
+    
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    {% block script %} {% endblock %}
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    {# <a class="navbar-brand" href="#">Navbar</a> #}
+    <a class="navbar-brand" href="#"><div style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        {# <a href="{% url 'showswdashboard0950' %}">FLEX ATTACH</a> #}
+        <a href="#">FLEX ATTACH</a>
+        <a href="#">HSA PC</a>
+        <a href="#">SWAGE</a>
+        <a href="#">ATS</a>
+        <a href="#">LASER SOLDERING</a>
+        <a href="#">AJD</a>
+        <a href="#">AUV</a>
+        <a href="#">SIRE-TEST</a>
+        <a href="#">ALIGNMENT</a>
+        <a href="#">GRAMLOAD</a>
+      </div>
+    </a>
+    <h3><strong><a href="{% url 'index' %}">SW VERSION DASHBOARD</a></strong></h3>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    </div>
+  </nav>
+  {% block body %}
+  {% endblock %}
+  <footer style="margin: 30px 20px; text-align:center">
+    &copy; {% now 'Y' %} HSA TM2 - All right reserved
+    <br>
+    Made by NirutG
+  </footer>
+</body>
+</html>
