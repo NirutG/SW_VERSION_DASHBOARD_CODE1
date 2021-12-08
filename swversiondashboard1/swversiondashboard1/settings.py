@@ -54,7 +54,7 @@ ROOT_URLCONF = 'swversiondashboard1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [Path.joinpath(BASE_DIR, 'swversiondashboard1/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
