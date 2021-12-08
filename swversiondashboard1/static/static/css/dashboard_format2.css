@@ -1,0 +1,262 @@
+/* BEGIN : Class for DASHBOARD */
+
+.table_tag {
+    /* background-color: #000000; */
+    background-color: #343a40;
+    /* border-color: #000000; */
+    border-color: #343a40;
+    color: #ffffff;
+    font-family: "Calibri", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+      sans-serif;
+    font-size: 19px;
+    text-align: left;
+    vertical-align: center;
+    /* position: absolute; */
+}
+
+.table_left_head {    
+  background-color: #343a40;
+  border-style: solid;
+  border-top: 2.5px solid #ffffff;
+  border-right: 1.5px solid #343a40;  
+  border-bottom: 2px solid #ffffff;
+  border-left: 1.5px solid #343a40;
+  color: #ffffff;
+  font-family: "Calibri", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+    sans-serif;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: center;
+  min-width:110px;
+  max-width:110px;
+  /* position: absolute; */
+}
+
+.table_left_edge {
+  background-color: #343a40;
+  border-style: solid;
+  border-top: 1.5px solid #ffffff;
+  border-right: 1.5px solid #343a40;
+  border-bottom: 1.5px solid #ffffff;
+  border-left: 1.5px solid #343a40;    
+  color: #ffffff;
+  font-family: "Calibri", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+    sans-serif;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: center;
+  /* position: absolute; */
+}
+
+.table_top_head {
+  background-color: #343a40;
+  border-style: solid;
+  border-top: 2.5px solid #ffffff;
+  border-left: 2px solid #ffffff;  
+  border-bottom: 2px solid #343a40;
+  color: #ffffff;
+  font-family: "Calibri", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+    sans-serif;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: center;
+  /* position: absolute; */
+}
+
+.table_cell {
+  border-color: #000000;
+  color: #000000;
+  font-family: "Calibri", "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+    sans-serif;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: center;
+
+  /* width: 100%;
+  position: fixed; */
+  /* top: 10; */
+}
+
+.TI01 {
+  background-color: #66ff33;
+  text-align: center;
+  width: 72px;
+}
+
+.TI02 {
+  background-color: #ffff00;
+  text-align: center;
+  width: 72px;
+}
+
+.TI03 {
+  background-color: #ffff00;
+  text-align: center;
+  width: 72px;
+}
+
+.TI04 {    
+    background-color: #ff0000;
+    text-align: center;
+    width: 72px;
+    animation: blinkingText 1s infinite;
+}
+@keyframes blinkingText{
+  0%		{ background-color: #daa569;}
+  25%		{ background-color: #db974a;}
+  50%		{ background-color: #ce2424;}
+  75%		{ background-color: #ff0000;}
+  100%	{ background-color: #ff0000;}
+}
+
+.TI05 {    
+  background-color: #ff0000;
+  text-align: center;
+  width: 72px;
+  animation: blinkingText 1s infinite;
+}
+@keyframes blinkingText{
+  0%		  { background-color: #daa569;}
+  25%		{ background-color: #db974a;}
+  50%		{ background-color: #ce2424;}
+  75%		{ background-color: #ff0000;}
+  100%	  { background-color: #ff0000;}
+}
+
+.NOT_TRIGGER {
+  background-color: #ff9933;
+  text-align: center;
+  width: 72px;
+}
+
+.NO_DATA {
+  background-color: #ff9933;
+  text-align: center;
+  width: 72px;
+}
+
+.RIGHT_TI01 {
+  background-color: #66ff33;
+  text-align: center;
+  width: 72px;
+  border-right: 4px solid #343a40;
+}
+
+.RIGHT_TI02 {
+  background-color: #ffff00;
+  text-align: center;
+  width: 72px;
+  border-right: 4px solid #343a40;
+}
+
+.RIGHT_TI03 {
+  background-color: #ffff00;
+  text-align: center;
+  width: 72px;
+  border-right: 4px solid #343a40;
+}
+
+.RIGHT_TI04 {    
+  background-color: #ff0000;
+  text-align: center;
+  border-right: 4px solid #343a40;
+  width: 72px;
+  animation: blinkingText 1s infinite;
+}
+@keyframes blinkingText{
+  0%		  { background-color: #daa569;}
+  25%		{ background-color: #db974a;}
+  50%		{ background-color: #ce2424;}
+  75%		{ background-color: #ff0000;}
+  100%	  { background-color: #ff0000;}
+}
+
+.RIGHT_TI05 {    
+  background-color: #ff0000;
+  text-align: center;
+  border-right: 4px solid #343a40;
+  width: 72px;
+  animation: blinkingText 1s infinite;
+}
+@keyframes blinkingText{
+  0%		  { background-color: #daa569;}
+  25%		{ background-color: #db974a;}
+  50%		{ background-color: #ce2424;}
+  75%		{ background-color: #ff0000;}
+  100%	  { background-color: #ff0000;}
+}
+
+.RIGHT_NOT_TRIGGER {
+  background-color: #ff9933;
+  text-align: center;
+  width: 72px;
+  border-right: 4px solid #343a40;
+}
+
+.RIGHT_NO_DATA {
+  background-color: #ff9933;
+  text-align: center;
+  width: 72px;
+  border-right: 4px solid #343a40;
+} 
+
+/* END : Class for DASHBOARD */
+
+/* BEGIN : Class for INFO */
+.TI01_INFO {
+  background-color: #66ff33;
+}
+
+.TI02_INFO {
+  background-color: #ffff00;
+}
+
+.TI03_INFO {
+  background-color: #ffff00;
+}
+
+.TI04_INFO {    
+    background-color: #ff0000;
+}
+
+.TI05_INFO {    
+  background-color: #ff0000;
+}
+
+.NOT_TRIGGER_INFO {
+  background-color: #ff9933;
+}
+
+.NO_DATA_INFO {
+  background-color: #ff9933;
+}
+
+.RIGHT_TI01_INFO {
+  background-color: #66ff33;
+}
+
+.RIGHT_TI02_INFO {
+  background-color: #ffff00;
+}
+
+.RIGHT_TI03_INFO {
+  background-color: #ffff00;
+}
+
+.RIGHT_TI04_INFO {    
+  background-color: #ff0000;
+}
+
+.RIGHT_TI05_INFO {    
+  background-color: #ff0000;
+}
+
+.RIGHT_NOT_TRIGGER_INFO {
+  background-color: #ff9933;
+}
+
+.RIGHT_NO_DATA_INFO {
+  background-color: #ff9933;
+}
+
+/* END : Class for INFO */
